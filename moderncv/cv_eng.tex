@@ -46,6 +46,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}  %<========== Language German, new orthography
 
+\usepackage{fontawesome}
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -60,7 +62,9 @@
 %\phone{(000) 111 1112}
 %\fax{(000) 111 1113}
 \email{ajith.krishnan@alumni.fh-aachen.de}
-%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\social[twitter]{jdoe}  
+
 \extrainfo{DOB: 04.01.1993 | Nationality: Indian}
 \photo[89pt][0.3pt]{pictures/bild.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
@@ -68,6 +72,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+
 
 \begin{comment}
 %----------------------------------------------------------------------------------------
@@ -108,8 +113,25 @@
 \section{\scshape{Experience}}
 
 %\subsection{\scshape{Work Experience}}
-\cventry{\fontsize{9}{10.8}\selectfont{08/2014-07/2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{Designed and installed HVAC systems in commercial buildings in Muscat, Oman.
-\newline{}}
+\cventry{\fontsize{9}{10.8}\selectfont{04/2018-Now}}{Student Assistant}{Streetscooter GmbH}{Aachen, Germany}{}
+{
+\begin{itemize}
+\item Developed and designed simulations of autonomous vehicles in Unity 3D and Unreal
+    Engine
+\item Implemented indoor/outdoor SLAM systems viz. RGBD SLAM, Elastic Fusion, 
+LSD SLAM and ORB SLAM2 using Intel Realsense d415 RGBD camera    
+\item Implemented various Unsupervised Learning Visual Odometry pipelines viz. Sfmlearner, vid2depth using Tensorflow
+\newline{}
+\end{itemize}}
+
+%{Implemented various Unsupervised Learning Visual Odometry pipelines viz. Sfmlearner, vid2depth using Tensorflow\newline{}}
+
+
+\cventry{\fontsize{9}{10.8}\selectfont{08/2014-07/2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{
+\begin{itemize}
+\item Designed an installed HVAC systems in commercial buildings in Muscat, Oman.
+\newline{}
+\end{itemize}}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -117,7 +139,7 @@
 
 \section{\scshape{Education}}
 
-\cventry{\fontsize{9}{10.8}\selectfont{09/2016-Present}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.25}
+\cventry{\fontsize{9}{10.8}\selectfont{09/2016-Present}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.31}
 {\begin{itemize}
 \item Subjects:  Industrial Communication, ROS, Advanced Robotics and Autonomous Mobile Systems
 \item Projects: 
@@ -173,6 +195,10 @@
 
 \section{\scshape{Additional Information}}
 
+\cventry{\fontsize{9}{10.8}\selectfont{01/2018-Now}}{Member}{Foodsharing}{Aachen, Germany}{}{Food sharing is a 2012 initiative against food waste that ßaves"food that would otherwise
+be thrown away. Over 200,000 registered users in Germany/Austria/Switzerland and
+over 25,000 volunteers, so-called food savers, make this initiative an international
+movement.}
 \cventry{\fontsize{9}{10.8}\selectfont{02/2013-05/2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities by educating nearly 4000 children across 23 cities in India.}
 \cventry{\fontsize{9}{10.8}\selectfont{06/2013-12/2013}}{Event Organiser}{TEDxCET}{India}{}{The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences.}
 
