@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+% to comment out blocks 
+\usepackage{verbatim}
+
+% to center align and specify column width in tables
+\usepackage{array}
+
+% german Language, new writing rules
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}  %<========== Language German, new orthography
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\Huge{\scshape{Ajith}}} % Your first name
+\familyname{\scshape{Krishnan}} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{\Large{Curriculum Vitae}}
+\address{Scheibenstraße 14}{Aachen, Deutschland 52070}
+\mobile{+15758660972}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{ajith.krishnan@alumni.fh-aachen.de}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{DOB: 04.01.1993 | Nationality: Indian}
+\photo[89pt][0.3pt]{pictures/bild.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{comment}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-2] % Dummy text
+\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{\textbf{\Large{E}\large{XPERIENCE}}}
+\section{\scshape{Experience}}
+
+%\subsection{\scshape{Work Experience}}
+\cventry{\fontsize{9}{10.8}\selectfont{08/2014-07/2016}}{Mechanical Engineer}{JAL Engineering Services L.L.C}{Oman}{}{Designed and installed HVAC systems in commercial buildings in Muscat, Oman.
+\newline{}}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Education}}
+
+\cventry{\fontsize{9}{10.8}\selectfont{09/2016-Present}}{Masters(Msc.) in Mechatronics}{Fachhochschule Aachen}{NRW, Germany}{GPA:2.25}
+{\begin{itemize}
+\item Subjects:  Industrial Communication, ROS, Advanced Robotics and Autonomous Mobile Systems
+\item Projects: 
+\begin{itemize}
+\item Development of Holonomic Automated Guided Vehicle - Implementing Autonomous Navigation and safety features using ROS. (ongoing)
+\item PWFHRC - Developed Autonomous Navigation System to track Wildlife in Kruger National Park using ROS and Gazebo.(July 2017)
+\item Arduino based Light Detection System - Developed a PID control system to manipulate the light intensity with a rolling shutter system(June 2017)
+\item Arduino based CAN – Developed a network based on MCP2515 CAN module using Arduino Uno. (December 2016)
+\newline{}
+\end{itemize}
+\end{itemize}  % Arguments not required can be left empty
+}
+
+\cventry{\fontsize{9}{10.8}\selectfont{07/2010-07/2014}}{Bachelors(B.Tech) in Mechanical Engineering}{College of Engineering}{Trivandrum, India}{GPA:7.56/10 (highest GPA:10.0)}
+{\begin{itemize}
+\item Subjects: Computer Programming and Numerical Methods, Computational Fluid Dynamics, Automobile Engineering
+\item Main Project: Numerical Study of Blunt Cone in a Flow Field – Studied the Lift and Drag characteristics using ANYSYS FLUENT (September 2013 – May 2014)
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Software Skills}}
+
+\cvitem{\fontsize{9}{10.8}\selectfont{Advanced}}{C++/C, Python, Matlab Simulink, Robotic Operating System(ROS), Gazebo, OpenCV}
+\cvitem{\fontsize{9}{10.8}\selectfont{Intermediate}}{SolidWorks, AutoCAD\newpage}
+%\cvitem{Basic}{Computer Hardware and Support}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Language Skills}}
+
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Mother Tongue}}{\normalfont{Malayalam}}{}
+\cvitemwithcomment{\fontsize{9}{10.8}\selectfont{Other Language(s)}}{\normalfont{English(TOEFL: 111/120)}}{}
+\cvitemwithcomment{}{\begin{tabular}{|>{\centering\arraybackslash}p{3.5cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|}
+\hline
+\normalfont{Language} & \normalfont{Listening} & \normalfont{Reading} & \normalfont{Speaking} & \normalfont{Writing}\\
+\hline
+\normalfont{Deutsch} & \normalfont{B1} & \normalfont{B1} & \normalfont{B1} & \normalfont{B1}\\
+\hline
+\end{tabular}
+\newline{}\newline{}
+\footnotesize{\normalfont{(*) Common European Framework of Reference(CEFR) Level}}}{}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{\scshape{Additional Information}}
+
+\cventry{\fontsize{9}{10.8}\selectfont{02/2013-05/2014}}{Public Relations Head}{Make A Difference}{India}{}{Make A Difference is a platform that empowers youth to become change leaders who make positive social impact and create self-sustaining communities by educating nearly 4000 children across 23 cities in India.}
+\cventry{\fontsize{9}{10.8}\selectfont{06/2013-12/2013}}{Event Organiser}{TEDxCET}{India}{}{The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences.}
+
+\begin{comment}
+\cvitem{\fontsize{9}{10.8}\selectfont{2008-Present}}{Member of Toastmasters International}
+\cvitem{\fontsize{9}{10.8}\selectfont{03.12.2011}}{Attended ‘Haptic RoboArm’ workshop conducted by IEEE SB-TKMIT, India.}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+\end{comment}
+%----------------------------------------------------------------------------------------
+
+\end{document}
